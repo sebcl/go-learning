@@ -38,7 +38,7 @@ func main() {
 		wg.Add(1)
 		go sendTicket(userTickets, firstName, lastName, email)
 
-		firstNames := getFirstNames()
+		firstNames := getName()
 		fmt.Printf("The first names of bookings are: %v\n", firstNames)
 
 		if remainingTickets == 0 {
